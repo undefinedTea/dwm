@@ -120,12 +120,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-
-	{ 0, XF86AudioMute           spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
-	{ 0, XF86AudioRaiseVolume    spwan, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
-	{ 0, XF86AudioLowerVolume    spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
-	{ 0, XF86MonBrightnessUp     spawn, SHCMD("brightnessctl set +5%") },
-	{ 0, XF86MonBrightnessDown   spawn, SHCMD("brightnessctl set 5%-") },
 };
 
 /* button definitions */
@@ -144,4 +138,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
