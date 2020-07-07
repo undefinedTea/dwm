@@ -9,8 +9,8 @@ static const unsigned int gappov    = 5;
 static const int smartgaps          = 1;
 static const int showbar            = 1;
 static const int topbar             = 1;
-static const char *fonts[]          = { "Dank Mono:pixelsize=13", "Apple Emoji" };
-static const char dmenufont[]       = "Dank Mono:pixelsize=13";
+static const char *fonts[]          = { "Dank Mono:size=13", "Apple Emoji:pixelsize=13" };
+static const char dmenufont[]       = "Dank Mono:size=13";
 static char normbgcolor[]           = "#2d2d2d";
 static char normbordercolor[]       = "#2d2d2d";
 static char normfgcolor[]           = "#e6e9ed";
@@ -20,6 +20,7 @@ static char selbgcolor[]            = "#b48cad";
 static const char *colors[][3]      = {
   [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
   [SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor  },
+  [SchemeTitle]= { normfgcolor, normbgcolor,  normbordercolor  },
 };
 
 static const char *tags[] = { "system", "general", ">_", "whitespace", "twitch" };
