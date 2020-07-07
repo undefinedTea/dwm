@@ -20,7 +20,7 @@ static char selbgcolor[]            = "#b48cad";
 static const char *colors[][3]      = {
   [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
   [SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor  },
-  [SchemeTitle]= { normfgcolor, normbgcolor,  normbordercolor  },
+  [SchemeTitle] = { normfgcolor, normbgcolor,  normbordercolor  },
 };
 
 static const char *tags[] = { "system", "general", ">_", "whitespace", "twitch" };
