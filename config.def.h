@@ -72,8 +72,8 @@ static Key keys[] = {
 
   { MODKEY,                       XK_e,      spawn,          SHCMD("st -e mutt") },
 
-  { MODKEY,                       XK_ESCAPE, killclient,     {0} },
-  { MODKEY|ShiftMask,             XK_ESCAPE, quit,           {0} },
+  { MODKEY,                       XK_Escape, killclient,     {0} },
+  { MODKEY|ShiftMask,             XK_Escape, quit,           {0} },
 
   { MODKEY,                       XK_n,      incnmaster,     {.i = +1 } },
   // { MODKEY|ShiftMask,              XK_n,      spawn,          SHCMD() },
@@ -126,7 +126,7 @@ static Key keys[] = {
   // { MODKEY,                       XK_F11,    spawn,          SHCMD() },
 
   { 0, XF86XK_AudioMute,          spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
-  { 0, XF86XK_AudioRaiseVolume,   spwan, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
+  { 0, XF86XK_AudioRaiseVolume,   spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
   { 0, XF86XK_AudioLowerVolume,   spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
 
   { 0, XF86XK_MonBrightnessUp,    spawn, SHCMD("brightnessctl set +5%") },
