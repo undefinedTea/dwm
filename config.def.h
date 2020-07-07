@@ -2,10 +2,10 @@
 
 static const unsigned int borderpx  = 3;
 static const unsigned int snap      = 32;
-static const unsigned int gappih    = 11;
-static const unsigned int gappiv    = 11;
-static const unsigned int gappoh    = 11;
-static const unsigned int gappov    = 11;
+static const unsigned int gappih    = 5;
+static const unsigned int gappiv    = 5;
+static const unsigned int gappoh    = 5;
+static const unsigned int gappov    = 5;
 static const int smartgaps          = 1;
 static const int showbar            = 1;
 static const int topbar             = 1;
@@ -149,7 +149,6 @@ static Key keys[] = {
 static Button buttons[] = {
   { ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
   { ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-  { ClkWinTitle,          0,              Button2,        zoom,           {0} },
   { ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
   { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
   { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
