@@ -65,6 +65,7 @@ static const char *termcmd[]  = { "st", NULL };
 #include <X11/XF86keysym.h>
 static Key keys[] = {
   { MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
+  { MODKEY|ShiftMask,             XK_s,      togglesticky,   {0} },
 
   { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 
