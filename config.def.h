@@ -20,7 +20,7 @@ static char selbgcolor[]            = "#b48cad";
 static const char *colors[][3]      = {
   [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
   [SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor  },
-	[SchemeTitle] = { normfgcolor, normbgcolor, normbordercolor },
+  [SchemeTitle] = { normfgcolor, normbgcolor, normbordercolor },
 };
 
 static const char *tags[] = { "system", "general", ">_", "whitespace", "twitch" };
@@ -151,7 +151,9 @@ static Button buttons[] = {
   { ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
   { ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
   { ClkWinTitle,          0,              Button2,        zoom,           {0} },
-  { ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+  { ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
+  { ClkStatusText,        0,              Button2,        sigdwmblocks,   {.i = 2} },
+  { ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
   { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
   { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
   { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
