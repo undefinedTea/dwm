@@ -65,7 +65,7 @@ static const char *termcmd[]  = { "st", NULL };
 #include <X11/XF86keysym.h>
 static Key keys[] = {
   { MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
-  { MODKEY|ShiftMask,             XK_s,      togglesticky,   {0} },
+  // { MODKEY|ShiftMask,             XK_s,      togglesticky,   {0} },
 
   { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 
@@ -154,7 +154,7 @@ static Button buttons[] = {
   { ClkWinTitle,          0,              Button2,        zoom,           {0} },
   { ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
   { ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
-  { ClkStatusText,        0,              Button9,        sigdwmblocks,   {.i = 9} },
+  // { ClkStatusText,        0,              Button9,        sigdwmblocks,   {.i = 9} },
   { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
   { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
   { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
