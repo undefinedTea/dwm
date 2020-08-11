@@ -113,8 +113,8 @@ static Key keys[] = {
 
   { MODKEY,                       XK_r,      spawn,          SHCMD("st -e ranger") },
 
-  // { MODKEY,                       XK_p,      spawn,          SHCMD("idle") },
-  // { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("lock") },
+  { MODKEY,                       XK_p,      spawn,          SHCMD("idle") },
+  { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("lock") },
 
   // { MODKEY,                       XK_o,      spawn,          SHCMD("screen") },
 
